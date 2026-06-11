@@ -72,3 +72,18 @@
 
 25. How does SQLite store data?
 25. SQLite stores data in a file (typically with .db extension) using a library that modifies the file, rather than running as a server
+
+26. What are the four primary data types in SQLite?
+26. Integers, real (decimals/floats), text, and blob
+
+27. How does SQLite handle type conversion for Boolean values?
+27. SQLite converts Boolean values to integers, with true being 1 and false being 0
+
+28. What is a unique characteristic of SQLite's data typing system?
+28. SQLite has a dynamically typed system that tries to accommodate different data types, often converting between them without strict constraints
+
+29. What happens when you insert a number into a text field in SQLite?
+29. SQLite will convert the number to text, so inserting the number 100 into a text field will result in the text value '100'
+
+30. What is a limitation of altering tables in SQLite compared to other databases?
+30. In SQLite, you can only alter one column or table at a time, whereas other databases like Postgres allow multiple column modifications in a single query
