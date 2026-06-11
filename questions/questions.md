@@ -42,3 +42,18 @@
 
 15. How can you view the schema of a table in SQLite?
 15. Use the .schema command followed by the table name, such as .schema Artist, to view the table's column structure and constraints
+
+16. What SQL keyword can be used to perform partial string matching?
+16. LIKE allows searching for partial string matches using percent signs (%), enabling flexible text searches in database queries
+
+17. How can you use LIKE to find a string anywhere within another string?
+17. By placing percent signs on both sides of the search term, like WHERE name LIKE '%orchestra%', which finds the search term anywhere in the text
+
+18. What SQL clauses can be used to implement pagination in a query?
+18. LIMIT and OFFSET can be used for basic pagination, such as SELECT * FROM Artists LIMIT 5 OFFSET 10 to retrieve a specific subset of results
+
+19. How can you order query results in SQL?
+19. Use ORDER BY followed by a column name, with optional ASC (ascending) or DESC (descending) to specify sort direction, like SELECT * FROM Artist ORDER BY name DESC
+
+20. What comparison operators can be used beyond simple equality in SQL queries?
+20. Operators like less than (<), less than or equal to (<=), greater than (>), and greater than or equal to (>=) can be used in WHERE clauses to filter results
