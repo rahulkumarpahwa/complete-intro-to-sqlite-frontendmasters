@@ -57,3 +57,18 @@
 
 20. What comparison operators can be used beyond simple equality in SQL queries?
 20. Operators like less than (<), less than or equal to (<=), greater than (>), and greater than or equal to (>=) can be used in WHERE clauses to filter results
+
+21. What is the basic syntax for inserting a new record into a SQLite database?
+21. INSERT INTO table_name (column_name) VALUES (value)
+
+22. What happens if you omit the WHERE clause in an UPDATE statement?
+22. It will update ALL records in the table with the specified value
+
+23. How can you return the updated or deleted record after a database operation?
+23. Use the RETURNING keyword after the UPDATE or DELETE statement, such as UPDATE table SET column = value WHERE condition RETURNING *
+
+24. What is important to remember when inserting values into multiple columns?
+24. The order of values must match the order of columns specified in the INSERT statement
+
+25. How does SQLite store data?
+25. SQLite stores data in a file (typically with .db extension) using a library that modifies the file, rather than running as a server
