@@ -26,4 +26,19 @@
 9. You can use either .exit command or press Control+D
 
 10. What does 'transit in memory' mean when running SQLite3 without a database?
-10. It creates a temporary, in-memory database session that is deleted when you exit, allowing you to experiment without preserving data
+10. It creates a temporary, in-memory database session that is deleted when you exit, allowing you to experiment without preserving data.
+
+11. What does the * symbol typically mean when used in a SQL SELECT statement?
+11. The * symbol means to retrieve all columns from a table
+
+12. What is the purpose of the WHERE clause in a SQL query?
+12. The WHERE clause limits the results to a specific subset of rows that match a given condition
+
+13. What is the difference between single and double quotes in SQL?
+13. Single quotes are used for string literals or actual values, while double quotes are used for table-level or column names
+
+14. When writing SQL queries for applications, what is recommended for selecting columns?
+14. Be specific about the columns you want to retrieve, rather than using SELECT * to improve code readability and performance
+
+15. How can you view the schema of a table in SQLite?
+15. Use the .schema command followed by the table name, such as .schema Artist, to view the table's column structure and constraints
