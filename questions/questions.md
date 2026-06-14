@@ -87,3 +87,18 @@
 
 30. What is a limitation of altering tables in SQLite compared to other databases?
 30. In SQLite, you can only alter one column or table at a time, whereas other databases like Postgres allow multiple column modifications in a single query
+
+31. What is a many-to-many relationship in database design?
+31. A relationship where multiple entities in one table can be associated with multiple entities in another table, such as band members belonging to multiple bands or ingredients being used in multiple recipes.
+
+32. What is the purpose of using table aliases in SQL joins?
+32. Table aliases make SQL queries more readable and less verbose by allowing shorter reference names for tables, such as using 'a' for album and 'b' for artist instead of typing full table names repeatedly.
+
+33. Why do relational databases use multiple tables instead of storing all information in a single table?
+33. Multiple tables help maintain data integrity, make updates easier, and prevent redundancy. For example, if an artist changes their name, only one row needs to be updated instead of updating every track and album row.
+
+34. How do you join multiple tables in SQL?
+34. You can join tables using the JOIN keyword and specifying a common identifier between tables, such as 'JOIN Artist ON Album.ArtistId = Artist.ArtistId', which connects related data across different tables.
+
+35. What is a one-to-many relationship in database design?
+35. A relationship where one entity in a table can be associated with multiple entities in another table, such as an album containing multiple tracks, or a band having multiple members.
