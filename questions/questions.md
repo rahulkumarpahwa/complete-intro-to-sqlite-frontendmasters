@@ -102,3 +102,18 @@
 
 35. What is a one-to-many relationship in database design?
 35. A relationship where one entity in a table can be associated with multiple entities in another table, such as an album containing multiple tracks, or a band having multiple members.
+
+36. What is an INNER JOIN in the context of SQL?
+36. An INNER JOIN returns only the results that exist in both tables, similar to the intersection in a Venn diagram. It excludes any records that only exist in one table but not the other.
+
+37. What is the primary difference between a LEFT JOIN and an INNER JOIN?
+37. A LEFT JOIN includes all records from the left table and matching records from the right table, even if no match exists. An INNER JOIN only returns records with matches in both tables.
+
+38. What does a RIGHT JOIN do in SQL?
+38. A RIGHT JOIN returns all records from the right table and matching records from the left table, including records from the right table that have no match in the left table.
+
+39. What is a FULL OUTER JOIN in SQL?
+39. A FULL OUTER JOIN returns all records from both tables, including records that do not have a match in the other table, effectively combining the results of LEFT and RIGHT JOINs.
+
+40. What is a NATURAL JOIN and why might it be considered problematic?
+40. A NATURAL JOIN automatically joins tables based on columns with the same name, without specifying join conditions. It can be prone to errors if table schemas change, as it might unexpectedly join on unintended columns.
