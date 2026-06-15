@@ -132,3 +132,18 @@
 
 45. What are the alternative ON DELETE behaviors for foreign keys?
 45. Alternative ON DELETE behaviors include CASCADE (automatically delete related records), SET NULL (set foreign key to null when primary record is deleted), and SET DEFAULT (set foreign key to a default value when primary record is deleted).
+
+46. What SQL aggregation function is used to count the number of rows in a database?
+46. COUNT, which can be used with variations like COUNT DISTINCT to count unique values
+
+47. What is the purpose of the SQL DISTINCT keyword when used with COUNT?
+47. DISTINCT collapses the result set to show only unique values, preventing duplicate entries from being counted multiple times
+
+48. In SQL aggregation queries, what clause is used to filter results after grouping and aggregation?
+48. HAVING clause is used to filter results based on aggregated values, unlike WHERE which filters before aggregation
+
+49. What other aggregation functions exist besides COUNT in SQL?
+49. Other aggregation functions include MAX (maximum value), MIN (minimum value), which can be used to find extreme values in a dataset
+
+50. When performing SQL aggregation queries with GROUP BY, what key rule must be followed about filtering?
+50. You cannot reference aggregated columns in the WHERE clause; aggregation-based filtering must use the HAVING clause
