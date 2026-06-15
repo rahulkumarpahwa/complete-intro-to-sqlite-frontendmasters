@@ -147,3 +147,18 @@
 
 50. When performing SQL aggregation queries with GROUP BY, what key rule must be followed about filtering?
 50. You cannot reference aggregated columns in the WHERE clause; aggregation-based filtering must use the HAVING clause
+
+51. What is the primary approach to testing when working with SQLite?
+51. Do not test the SQLite database itself (as it is already well-tested), instead focus on testing your own code and any business logic implemented within the database
+
+52. When would you write integration tests related to SQLite?
+52. When you have strong business logic tied into the database using constraints, triggers, or functions that need verification
+
+53. What makes SQLite particularly convenient for testing?
+53. It can run anywhere, including in CI/CD platforms like GitHub Actions, CircleCI, and Jenkins, with very fast performance and no latency concerns
+
+54. What testing workflow does the instructor recommend for SQLite?
+54. Use a local database for development, create a test database with predefined data, run tests that can modify the database, and not check in the test database
+
+55. What is a recommended approach for modular testing when working with databases?
+55. Make code components modular and self-contained, then test them individually, focusing on the code that interacts with the database rather than the database itself
