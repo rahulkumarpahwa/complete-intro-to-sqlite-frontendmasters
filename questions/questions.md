@@ -117,3 +117,18 @@
 
 40. What is a NATURAL JOIN and why might it be considered problematic?
 40. A NATURAL JOIN automatically joins tables based on columns with the same name, without specifying join conditions. It can be prone to errors if table schemas change, as it might unexpectedly join on unintended columns.
+
+41. What is a foreign key in a database?
+41. A foreign key is a column in a table that references a primary key in another table, creating a relationship between two tables and maintaining referential integrity.
+
+42. What does the ON DELETE NO ACTION constraint do in a foreign key?
+42. ON DELETE NO ACTION prevents deleting a record in the primary table if there are related records in the foreign key table, ensuring data integrity by failing the query if dependent records exist.
+
+43. Why does SQLite not respect foreign key constraints by default?
+43. SQLite is aggressively backwards compatible and did not want to break older applications that were written when foreign key constraints were not respected, so foreign key enforcement is disabled by default.
+
+44. How do you enable foreign key constraints in SQLite?
+44. You must execute the PRAGMA foreign_keys=on command for each database connection to enable foreign key constraint enforcement.
+
+45. What are the alternative ON DELETE behaviors for foreign keys?
+45. Alternative ON DELETE behaviors include CASCADE (automatically delete related records), SET NULL (set foreign key to null when primary record is deleted), and SET DEFAULT (set foreign key to a default value when primary record is deleted).
