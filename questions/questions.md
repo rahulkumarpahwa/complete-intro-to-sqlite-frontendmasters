@@ -162,3 +162,18 @@
 
 55. What is a recommended approach for modular testing when working with databases?
 55. Make code components modular and self-contained, then test them individually, focusing on the code that interacts with the database rather than the database itself
+
+56. What is a subquery in SQL?
+56. A subquery is a query nested inside another query, where the inner query is executed first and its result is used by the outer query to filter or determine values.
+
+57. What are two ways to filter invoices by customer email?
+57. Using a JOIN between invoice and customer tables, 2. Using a subquery where the inner query selects the customer ID based on email and the outer query uses that customer ID to filter invoices.
+
+58. In a subquery structure, how does the execution order work?
+58. The inner (nested) query runs first, and the value(s) it returns are then used by the outer query to filter or determine results.
+
+59. What is a potential advantage of using subqueries?
+59. Subqueries can be more performant in certain scenarios, especially with indexed queries, and can simplify complex filtering without needing to join entire tables.
+
+60. What is a key principle when considering query optimization?
+60. Don't prematurely optimize; wait until performance becomes an actual problem, and always measure performance before making changes.
