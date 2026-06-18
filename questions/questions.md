@@ -252,3 +252,18 @@
 
 85. What makes SQLite's typing approach unique compared to other databases?
 85. SQLite's typing is intentionally flexible, allowing queries from other databases to be easily transferred with minimal modification, unlike databases like MySQL and PostgreSQL that can have stricter type compatibility requirements.
+
+86. What is the maximum row size in SQLite?
+86. 1 gigabyte
+
+87. How many columns can a SQLite table have by default?
+87. 2,000 columns
+
+88. How many characters can a SQLite query be?
+88. 1 billion characters
+
+89. How many tables and joins can a SQLite database support?
+89. 64 tables and joins
+
+90. What is the maximum database size in SQLite?
+90. 281 terabytes
