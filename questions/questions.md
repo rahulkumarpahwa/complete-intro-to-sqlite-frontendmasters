@@ -237,3 +237,18 @@
 
 80. What ORM libraries are considered modern and recommended?
 80. Prisma, Drizzle, and Sequelize are considered modern ORMs that have improved significantly in recent years, offering more robust and developer-friendly database interaction methods
+
+81. How does SQLite handle data typing?
+81. SQLite is extremely flexible with data typing and not rigid. A column limited to 250.55 characters can still store data up to two gigabytes, and SQLite does not enforce strict type constraints
+
+82. When did SQLite introduce strict table functionality?
+82. SQLite added strict table functionality in 2021, making the database slightly more opinionated about type constraints.
+
+83. How does SQLite handle boolean values?
+83. SQLite does not have a native boolean type. Instead, it uses zeros and ones, with true and false being aliases for 0 and 1.
+
+84. How does SQLite manage timestamp data?
+84. SQLite does not have a native timestamp type. Timestamps are stored as strings, and conversions are performed manually using built-in functions when processing time-related data.
+
+85. What makes SQLite's typing approach unique compared to other databases?
+85. SQLite's typing is intentionally flexible, allowing queries from other databases to be easily transferred with minimal modification, unlike databases like MySQL and PostgreSQL that can have stricter type compatibility requirements.
