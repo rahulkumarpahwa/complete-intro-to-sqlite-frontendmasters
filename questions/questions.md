@@ -192,3 +192,18 @@
 
 65. On which port does the local development server run?
 65. localhost:8080
+
+66. How do you connect to an SQLite database in Node.js using sqlite3?
+66. Use const db = new sqlite3.database('data.db') to create a database connection in the same directory
+
+67. What are the primary methods for querying data in sqlite3?
+67. The primary methods are db.all() (retrieve all rows), db.get() (retrieve one row), db.each() (iterate through rows), and db.run() (for updates and deletes)
+
+68. How can you prevent SQL injection when writing database queries?
+68. Use parameterized queries with either question marks (?) or named parameters, and never directly insert user input into SQL statements
+
+69. What is the structure of a Node.js callback for database queries?
+69. The callback function always has two parameters: the first is for errors, and the second is for results. First, check for errors, then process the results if no error is found
+
+70. What is a Nodeback in the context of Node.js database queries?
+70. A Nodeback is a callback function used in older Node.js libraries that follows a specific pattern: the first parameter is for errors, the second parameter is for results, and it is used instead of promises for handling asynchronous operations
