@@ -207,3 +207,18 @@
 
 70. What is a Nodeback in the context of Node.js database queries?
 70. A Nodeback is a callback function used in older Node.js libraries that follows a specific pattern: the first parameter is for errors, the second parameter is for results, and it is used instead of promises for handling asynchronous operations
+
+71. What is considered an anti-pattern when writing SQL queries?
+71. Using SELECT * is considered an anti-pattern, as it can lead to maintenance issues and potential problems if the table structure changes. It is recommended to explicitly list the columns you want to retrieve.
+
+72. What method is used to handle potential errors when executing a database query in this example?
+72. The code uses an error-first callback pattern, checking for an error using if err, and then handling the error by setting a response code (e.g., 500) and sending an error message using reply.code() and reply.send().
+
+73. What SQL technique is demonstrated when retrieving invoice details in this example?
+73. The example uses SQL column aliasing (AS keyword) to rename columns when selecting data, such as InvoiceID as id, InvoiceDate as date, which allows for more readable and consistent column names in the result set.
+
+74. What SQL JOIN operations are used to retrieve invoice line details in this example?
+74. Multiple JOIN operations are used to connect InvoiceLine with Track, Album, and Artist tables using specific JOIN conditions like JOIN Track t ON t.TrackId = i.TrackId and JOIN Album a ON a.AlbumId = t.AlbumId.
+
+75. What is a recommended practice when using Nodemon with SQLite databases?
+75. When using Nodemon, exclude the database file from being watched to prevent unnecessary app restarts every time the database file changes.
