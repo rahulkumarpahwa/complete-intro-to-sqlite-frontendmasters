@@ -177,3 +177,18 @@
 
 60. What is a key principle when considering query optimization?
 60. Don't prematurely optimize; wait until performance becomes an actual problem, and always measure performance before making changes.
+
+61. What is the primary database driver being used in this Node.js project?
+61. Sqlite3, which is the official SQLite driver for Node.js
+
+62. What development tool is included to help with the development cycle?
+62. Nodemon
+
+63. What web frameworks/libraries are mentioned as part of the project setup?
+63. Fastify, HTMX, and Handlebars
+
+64. What command is used to start the development server?
+64. npm run dev
+
+65. On which port does the local development server run?
+65. localhost:8080
