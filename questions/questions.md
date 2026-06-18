@@ -222,3 +222,18 @@
 
 75. What is a recommended practice when using Nodemon with SQLite databases?
 75. When using Nodemon, exclude the database file from being watched to prevent unnecessary app restarts every time the database file changes.
+
+76. What are the main characteristics of Better Sqlite3 compared to the standard SQLite3 client?
+76. Better Sqlite3 offers faster performance, supports prepared statements, allows pragmas, includes a promise library, and can perform synchronous queries, which the standard SQLite3 client cannot easily do
+
+77. What is an ORM and how has the perception of ORMs changed in recent years?
+77. An ORM (Object-Relational Mapping) is a library that generates SQL queries programmatically, allowing developers to interact with databases without writing direct SQL. The perception has shifted from 'never use an ORM' to considering tools like Prisma and Drizzle as valuable, which have made ORMs more desirable
+
+78. What potential drawbacks do ORMs have when working with databases?
+78. ORMs can generate complex and inefficient queries that may not be as performant as hand-written SQL. Developers might find themselves fighting the ORM's query generation, which can defeat the purpose of using an ORM
+
+79. What are some advantages of using an ORM?
+79. ORMs handle complex tasks like data migrations, abstract away direct SQL writing, provide a programmatic interface to database interactions, and can simplify database operations across different database systems
+
+80. What ORM libraries are considered modern and recommended?
+80. Prisma, Drizzle, and Sequelize are considered modern ORMs that have improved significantly in recent years, offering more robust and developer-friendly database interaction methods
