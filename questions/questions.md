@@ -297,3 +297,18 @@
 
 100. When should you be concerned about query performance in SQLite?
 100. When dealing with high-volume data or frequent queries, especially with large datasets (e.g., millions of rows)
+
+101. What command is used to list existing indexes on a table in SQLite?
+101. pragma index_list [table_name]
+
+102. How do you create a new index on a column in SQLite?
+102. CREATE INDEX index_name ON table_name (column_name)
+
+103. What data structure do indexes in databases typically use?
+103. B-tree (Balanced Tree)
+
+104. What are the performance trade-offs of creating an index?
+104. Indexes make searches faster but slow down inserts and deletes because the B-tree must be updated each time
+
+105. What are the two key terms to look for when examining query plans?
+105. Search and scan - 'search' indicates an index is being used efficiently, while 'scan' suggests the database is checking every row
