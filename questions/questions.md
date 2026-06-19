@@ -282,3 +282,18 @@
 
 95. What is an example use case for a database view?
 95. A view can be used to limit data access by exposing only a subset of data to users. For instance, in a media database, a view could provide access to only the music database while keeping other data private.
+
+96. What does the SQL command EXPLAIN QUERYPLAN reveal about database query performance?
+96. It shows how a query is executed, with 'scan' indicating that the database must check every row in a table to find matching results
+
+97. What is the significance of a 'scan' in a query plan?
+97. A scan means the database must look at every single row in a table to find matching results, which can be inefficient for large datasets
+
+98. How can you automatically enable query plan explanation in SQLite?
+98. Use the .eqp on command, which will automatically show the explain query plan for subsequent queries
+
+99. What is a general guideline for using database indexes?
+99. Indexes are like medicine: use them only when necessary, as too few can be inefficient and too many can be harmful
+
+100. When should you be concerned about query performance in SQLite?
+100. When dealing with high-volume data or frequent queries, especially with large datasets (e.g., millions of rows)
