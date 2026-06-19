@@ -267,3 +267,18 @@
 
 90. What is the maximum database size in SQLite?
 90. 281 terabytes
+
+91. What is a view in SQLite and how does it function?
+91. A view is an abstraction layer on top of tables that presents data as if it were a single table, but actually queries multiple underlying tables. It allows complex joins to be simplified into a single, easily queryable virtual table.
+
+92. How do you create a view in SQLite?
+92. To create a view, use the syntax: CREATE VIEW view_name AS SELECT ... FROM ... JOIN ... This allows you to define a virtual table based on a specific query that can be queried like a regular table.
+
+93. What is a potential performance drawback of using views?
+93. Every time a view is queried, the underlying complex query is run again. For large datasets or complex joins, this can lead to significant performance issues, as the view recreates the result set each time it is accessed.
+
+94. What feature does SQLite lack in comparison to other databases regarding views?
+94. SQLite does not support materialized views or inserting data directly into views. Materialized views would store the result set as a physical table, and some databases allow inserting into views that distribute data across underlying tables.
+
+95. What is an example use case for a database view?
+95. A view can be used to limit data access by exposing only a subset of data to users. For instance, in a media database, a view could provide access to only the music database while keeping other data private.
