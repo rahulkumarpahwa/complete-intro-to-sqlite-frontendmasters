@@ -312,3 +312,18 @@
 
 105. What are the two key terms to look for when examining query plans?
 105. Search and scan - 'search' indicates an index is being used efficiently, while 'scan' suggests the database is checking every row
+
+106. What is FTS5 in SQLite?
+106. FTS5 stands for Full Text Search version 5, which is an SQLite extension that allows performing advanced text searches across multiple columns efficiently, enabling more complex and performant text matching compared to traditional SQL search methods
+
+107. How do you create a virtual table for full text search in SQLite?
+107. Use the CREATE VIRTUAL TABLE command with FTS5, specifying the source table/view, the columns to include in the search, and mapping the rowid. Example syntax: CREATE VIRTUAL TABLE track_search USING FTS5(content='easy_tracks', content_rowid='id', track, album, artist)
+
+108. What SQLite function allows matching text across multiple columns?
+108. The MATCH function allows searching text across multiple columns in a single query. For example: SELECT * FROM track_search WHERE track_search MATCH 'black' will search for 'black' across specified columns
+
+109. What is BM25 in SQLite's full text search?
+109. BM25 is a ranking function in SQLite's full text search that provides a relevance score for search results. Lower (more negative) numbers indicate better matches. It can be used to order search results by their lexical proximity to the search term
+
+110. What is required after creating a virtual FTS5 table?
+110. After creating a virtual FTS5 table, you must explicitly insert data into the virtual table using an INSERT statement that selects from the source table, such as: INSERT INTO track_search SELECT album, artist, track FROM easy_tracks
