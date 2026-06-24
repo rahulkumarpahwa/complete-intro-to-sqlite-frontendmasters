@@ -327,3 +327,18 @@
 
 110. What is required after creating a virtual FTS5 table?
 110. After creating a virtual FTS5 table, you must explicitly insert data into the virtual table using an INSERT statement that selects from the source table, such as: INSERT INTO track_search SELECT album, artist, track FROM easy_tracks
+
+111. What is sqlpkg and what does it do for SQLite?
+111. Sqlpkg is an unofficial package manager for SQLite extensions that allows users to easily install and manage various SQLite extensions, with currently over 100 extensions available in its repository.
+
+112. How do you load a SQLite extension using the .load command?
+112. You need to provide the full path to the extension's dylib file using the .load command, followed by the path. For example: .load '/full/path/to/extension.dylib'
+
+113. Why do SQLite extensions often require functions to be called using a SELECT statement?
+113. SQLite requires functions to be called within a SELECT statement because it needs a way to interpret and execute the function, even if the function is modifying the database or performing an action.
+
+114. What unique capability does the http extension for SQLite provide?
+114. The http extension allows users to make HTTP requests directly from SQLite, such as using http_get_body to retrieve web content, potentially replacing tools like cURL for simple web requests.
+
+115. What is the vec extension for SQLite designed to do?
+115. The vec extension is designed to provide vector search capabilities directly within SQLite, potentially replacing external vector search services like Pinecone, though it is currently in alpha or beta stage.
