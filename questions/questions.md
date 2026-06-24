@@ -342,3 +342,18 @@
 
 115. What is the vec extension for SQLite designed to do?
 115. The vec extension is designed to provide vector search capabilities directly within SQLite, potentially replacing external vector search services like Pinecone, though it is currently in alpha or beta stage.
+
+116. What is the primary advantage of using the JSON extension in SQLite?
+116. It allows storing unstructured data with varying keys and values without creating numerous columns, providing flexibility similar to NoSQL databases like MongoDB
+
+117. How can you create a JSON array in SQLite?
+117. Use the json_array() function, which takes multiple values and returns a well-formatted JSON array
+
+118. What function can you use to determine the length of a JSON array?
+118. Use json_array_length() with the JSON array and a selector (e.g., '$' or '$.favorites') to return the number of elements
+
+119. How can you determine the type of a JSON value in SQLite?
+119. Use json_type() function with a selector, which returns the type of the JSON value (e.g., 'string', 'array', 'object')
+
+120. What is the json_object() function used for in SQLite?
+120. It creates a JSON object by taking paired key-value arguments, allowing you to construct JSON objects programmatically with an even number of arguments
