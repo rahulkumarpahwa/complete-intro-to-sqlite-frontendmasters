@@ -372,3 +372,18 @@
 
 125. How can you update a specific value in a JSON object using SQLite?
 125. Use the JSON_REPLACE function, which allows updating the value of an existing key in a JSON object
+ 
+126. What is the difference between JSON and JSONB in SQLite?
+126. JSONB is a binary representation of JSON that is more compact, potentially faster to query, and not human-readable, while JSON is a standard string representation that is human-readable. JSONB is recommended for most database storage and querying scenarios.
+
+127. How do you access nested JSON data in a SQLite query?
+127. You can use accessors like data 'name' 'first' or data 'name' 'last' to retrieve nested JSON properties. For example: SELECT data 'name' 'first', data 'name' 'last' FROM users.
+
+128. How can you find users with a small number of favorites using JSON data?
+128. Use the json_array_length() function to count the number of items in an array. For example: SELECT * FROM users WHERE json_array_length(data, 'favorites') < 2.
+
+129. What functions work similarly between JSON and JSONB in SQLite?
+129. Most JSON manipulation functions like replace, remove, and insert work the same way in both JSON and JSONB, with the primary difference being the storage format.
+
+130. What is a recommended approach when working with JSON in a database?
+130. Use JSONB for storage and querying, and always use SQLite's JSON manipulation functions instead of trying to manually modify the JSONB data directly.
