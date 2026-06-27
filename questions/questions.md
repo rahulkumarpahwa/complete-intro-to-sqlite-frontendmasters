@@ -387,3 +387,18 @@
 
 130. What is a recommended approach when working with JSON in a database?
 130. Use JSONB for storage and querying, and always use SQLite's JSON manipulation functions instead of trying to manually modify the JSONB data directly.
+
+131. What PostgreSQL function is used to extract individual values from a JSON array and create rows?
+131. json_each
+
+132. How do you append a new value to a JSON array in PostgreSQL?
+132. Use jsonb_insert with the '#' notation to add an element to the end of the array
+
+133. What SQL command is used to modify existing JSON data in a table?
+133. UPDATE with SET and a JSON manipulation function like jsonb_insert or jsonb_set
+
+134. How can you count the occurrences of values in a JSON array using SQL?
+134. Use GROUP BY on the JSON array values and COUNT() to aggregate the results
+
+135. What is the difference between json_insert and jsonb in PostgreSQL?
+135. jsonb is a binary JSON format that provides more efficient storage and processing compared to json_insert, which works with string representations of JSON
