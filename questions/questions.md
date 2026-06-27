@@ -357,3 +357,18 @@
 
 120. What is the json_object() function used for in SQLite?
 120. It creates a JSON object by taking paired key-value arguments, allowing you to construct JSON objects programmatically with an even number of arguments
+
+121. What SQLite JSON function is used to insert a new key-value pair into a JSON object?
+121. JSON_INSERT function, which allows adding a new key and value to an existing JSON object
+
+122. How do you remove a specific key from a JSON object in SQLite?
+122. Use the JSON_REMOVE function with the path to the key you want to delete, such as $.favorites
+
+123. What is the single arrow (->) used for when accessing JSON data in SQLite?
+123. The single arrow allows navigation through nested JSON objects and can be used to continue accessing deeper levels of a JSON structure
+
+124. What is the double arrow (->>) used for when accessing JSON data in SQLite?
+124. The double arrow extracts the actual value from a JSON object, removing JSON quotes and returning the raw value
+
+125. How can you update a specific value in a JSON object using SQLite?
+125. Use the JSON_REPLACE function, which allows updating the value of an existing key in a JSON object
