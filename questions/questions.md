@@ -417,3 +417,18 @@
 
 140. How does Lightstream handle database versioning during backups?
 140. Lightstream preserves multiple versions of a database, allowing restoration to specific points in time. The number of preserved versions can be configured, enabling flexible backup and rollback capabilities.
+
+141. What problem does LiteFS solve for SQLite in a distributed, auto-scaling environment?
+141. LiteFS allows SQLite databases to be replicated across multiple servers, with one primary database handling writes and automatically propagating those writes to secondary replicas, ensuring data consistency in auto-scaled environments.
+
+142. How does LiteFS handle write operations in a multi-server setup?
+142. When a write occurs on the primary database, LiteFS automatically replicates that write to all subscribed secondary servers. If a secondary server attempts to write, it passes the write request back to the primary server for processing.
+
+143. What technology does LiteFS use to enable file system replication?
+143. LiteFS uses a fuse-based system, which is a file system primitive in Linux that enables shared file system capabilities across distributed servers.
+
+144. What challenge does SQLite face when running on multiple auto-scaled servers?
+144. In an auto-scaled environment, multiple servers running SQLite cannot write to the database simultaneously because each server has its own independent copy of the database file, making data synchronization challenging.
+
+145. What platform created LiteFS, and how does it relate to cloud deployment?
+145. LiteFS was created by Fly.io, a cloud platform similar to Heroku that provides auto-scaling virtual machines and aims to simplify cloud deployment for developers.
