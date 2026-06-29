@@ -402,3 +402,18 @@
 
 135. What is the difference between json_insert and jsonb in PostgreSQL?
 135. jsonb is a binary JSON format that provides more efficient storage and processing compared to json_insert, which works with string representations of JSON
+
+136. What is MinIO and how does it relate to S3?
+136. MinIO is an open-source, locally runnable version of S3 object storage. It allows you to create and manage storage buckets locally, mimicking the functionality of AWS S3, and can be used for storing files and database backups.
+
+137. What is Lightstream and what is its primary purpose in database management?
+137. Lightstream is a tool that allows streaming and replicating SQLite database files to remote storage locations like S3, MinIO, or other object storage services. It enables easy backup and restoration of database files with minimal configuration.
+
+138. How can you back up a SQLite database using Lightstream?
+138. You can back up a SQLite database using Lightstream by running a command that specifies the source database file and a destination storage location, such as an S3 bucket or MinIO storage, which will stream and preserve database snapshots.
+
+139. What are the potential advantages of using Lightstream for database backups?
+139. Lightstream provides simple, lightweight database backup solutions that can stream to various cloud storage services, preserve multiple database versions, allow easy restoration, and eliminate complex database credential management.
+
+140. How does Lightstream handle database versioning during backups?
+140. Lightstream preserves multiple versions of a database, allowing restoration to specific points in time. The number of preserved versions can be configured, enabling flexible backup and rollback capabilities.
